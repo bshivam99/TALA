@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "apna" ;
+    src: url(./KFOlCnqEu92Fr1MmEU9fBBc4.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    position: relative;
+    color: #dadada;
+}
+body{
+    background-color: #222;
+    overflow-x: hidden;
+    z-index: 99;
+  
+}
+
+#full-scr-nav{
+  
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: bisque;
+    top : -100vh ; 
+    color: #222;
+    padding: 150px 150px ;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    z-index: 99;
+     
+    
+    
+}
+#full-scr-nav h1{
+    font-size: 150px ;
+    color: #222222;
+
+
+}
+#options, #info{
+    font-size: 29px ;
+   
+}
+.a{
+    opacity: 0 ;
+    margin-bottom: 1.5vw ;
+    white-space: nowrap;
+}
+#info{
+    position: absolute;
+    right : 5% ; 
+    bottom : 5% ;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw  ;  
+}
+#nav{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100px ;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    color: #dadada;
+    z-index: 99;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1.8s ;
+   
+    
+}
+#nav h2{
+    text-transform: uppercase;
+    font-size: 26px ;
+    letter-spacing: 5px ;
+
+}
+#nav_prt2{
+    display: flex;
+    gap: 50px ;
+    align-items: center;
+}
+#nav h3{
+    text-transform: uppercase;
+    font-size: 26px ;
+    letter-spacing: 1px ;
+
+}
+.ri-menu-3-fill{
+    font-size: 26px ;
+    cursor: pointer;
+}
+
+#page1{
+    display: block;
+    width: 100vw;
+    min-height: 85vh;
+    position: relative;
+    background-color: #333;
+}
+#page1 h1{
+    position: absolute;
+    font-size: 200px ;
+    left: 5%;
+    top: 30% ;
+    letter-spacing: 8px ;
+}
+
+#page1 h2{
+    position: absolute;
+    font-size: 40px ;
+    left: 25%;
+    top: 61% ;
+    line-height: 70% ;
+    letter-spacing: .3px ;
+    color: #dadadac4;
+}
+#page1 h3{
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 17px ;
+    left: 75%;
+    top: 60% ;
+    color: #dadadac4;
+    line-height: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+#page2{
+    display: block;
+    position: relative;
+    width: 100vw ;
+    min-height: 100vh;
+   padding-bottom: 20vh ;  
+}
+#page2 img{
+    position: relative;
+    width: 100%  ;
+    top : -10vh ;
+    left: 50%;
+    transform: translate(-50% , 0 ) scale(0.9);
+    z-index: 9;
+}
+#h1{
+    margin-top: 10vh ;
+}
+#page2 h1{
+    font-size: 40px ;
+    align-items: center;
+    text-align: center;
+    width: 50%  ;
+    margin-left: auto;
+    margin-right: auto ;
+    transform-origin : 100% 100% ;
+    transform: rotateX(270deg);
+}
+#page2 h1 span{
+    font-family :cursive ; 
+    font-size: 27px ;
+    opacity: 0.9 ;
+}
+
+#page3{
+    width: 100vw ;
+    min-height: 100vh ;
+}
+#page4{
+    position: relative;
+    width: 100vw ;
+    min-height: 89vh ;
+    padding: 60px 140px ;
+}
+#page4 h1{
+    font-size: 150px ;
+    display: inline;
+}
+#page5{
+    position: relative;
+    width: 100vw ;
+    height: 130vh ;
+}
+#page5-elems{
+   
+    width: 100%;
+    height: 22% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page5-elems h1{
+    width: 70%;
+    height: 100%;
+    font-size: 55px ;
+    align-items: center;
+    border-top:  1px solid #ffffffa6;
+    border-bottom:  1px solid #ffffffa6;
+    padding: 40px 80px ;
+
+}
+#page5-elems h2{
+    width: 30%;
+    height: 100%;
+    font-size: 30px ;
+    align-items: center;
+    border:  1px solid #ffffffa0;
+    padding: 40px 60px ;
+}
+#page-content{
+    height: 100vh ;
+    width: 100vw ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1424460421773-58b49adfc68a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#page-content h1{
+    font-size: 60px ;
+    text-align: center ; 
+    margin-top: 10vh ;
+    line-height: 6vh ;
+}
+#page-content h1 span{
+    font-family: cursive;
+    font-weight: 100;
+    opacity: 0.8;
+}
+#page-content h4{
+    margin-top: 6vh ;
+    color: #dadadac2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#page6 {
+    text-transform: uppercase;
+    
+}
+#page6 h1{
+    font-size: 10vw ;
+    line-height: 23vh;    
+}
+.one1{
+    color: transparent;
+    -webkit-text-stroke: 1px #ffff;
+}
+#page6 .slide2-of-h1 h1{
+    transform: translateX(-100%);
+}
+
+#page7{
+    width: 100vw;
+    height: 100vh ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 100px 50px ; */
+}
+#page7 h3{
+    font-size: 4.2vw ;
+    position: absolute;
+    width: 50% ;
+    height: 50%  ;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50% , 0% );
+    text-align: center;
+}
+#page7 h3 span{
+    font-family: cursive;
+    font-size: 3.2vw ;
+}
+#page7-elems{
+
+    position: relative;
+    height : 50vh ;
+    width: 100% ;
+    top: 40% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+
+}
+#element1{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+#element2{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+#element1 h1{
+    font-size: 60px ;
+    z-index: 99 ;
+    position: absolute;
+}
+#element2 h1{
+    font-size: 60px ;
+    z-index: 99 ;
+    position: relative;
+}
+#element1 img{
+    position: absolute;
+    width: 70%;
+    height: 80% ;
+    object-fit: cover;
+    opacity: 0 ;
+    transform: rotate(10deg);
+    transition: opacity ease-in 0.2s ;
+}
+#element2 img {
+    position: absolute;
+    width: 70%;
+    height: 80% ;
+    object-fit: cover;   
+    transform: rotate(10deg);
+    opacity: 0 ;
+    transition :opacity ease-in 0.3s ;
+}
+   
+   
+
+
